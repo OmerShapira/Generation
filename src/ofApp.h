@@ -46,7 +46,7 @@ private:
         int waveformNumSegments;
         float vocabWindowWidth, vocabWindowHeight;
         
-        float vocabWindowThumbnailSize_px;
+        float pxVocabThumbnailSize;
         float defaultIndent;
         float msSampleSize, msScreenSampleLength;
     } params;
