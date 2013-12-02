@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "Negotiator.app"
-            BlueprintName = "Negotiator"
-            ReferencedContainer = "container:Negotiator.xcodeproj">
+            BuildableName = "Generation.app"
+            BlueprintName = "Generation"
+            ReferencedContainer = "container:Generation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-            BuildableName = "Negotiator.app"
-            BlueprintName = "Negotiator"
-            ReferencedContainer = "container:Negotiator.xcodeproj">
+            BuildableName = "Generation.app"
+            BlueprintName = "Generation"
+            ReferencedContainer = "container:Generation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>

@@ -12,7 +12,7 @@ void testApp::setup(){
     ofBackground(40);
     waveform.setMode(OF_PRIMITIVE_LINE_STRIP);
     preview.setMode(OF_PRIMITIVE_LINE_STRIP);
-    waveformColor = ofColor(170, 40, 40);
+    waveformColor = ofFloatColor(0.75, 0.18, 0.18);
     lineColor = ofColor::seaGreen;
     
     //Set Noise
@@ -28,7 +28,7 @@ void testApp::update(){
     
     waveform.clear();
     time = timer.getAppTimeMillis();
-    float resolution  = 0.01;
+    float resolution  = ofGetMouseX()*0.0001;// 0.01;
     float amplitude = 200;
     
     //number of segments dictates number of milliseconds of lookahead
