@@ -19,15 +19,15 @@ public:
      */
     static float bSpline (float t, float min, float max){
         float ret;
-        if (min > max || !ofInRange(t, min, max)) {
+        if ((min > max) || (!ofInRange(t, min, max))) {
             ret = 0;
         } else {
             float val = ofMap(t, min, max, 0, 3);
             
-            if (ofInRange(t, 0, 1)){
+            if (ofInRange(val, 0, 1)){
                 ret = val * val * 0.5;
-            } else if (ofInRange(t, 1, 2)) {
-                ret = (val * val * -2. + 6 * val - 3.) * 0.5;
+            } else if (ofInRange(val, 1, 2)) {
+                ret = (val * val * (-2.) + 6 * val - 3.) * 0.5;
             } else {
                 float tmp = (3. - val);
                 ret = tmp * tmp * 0.5;
