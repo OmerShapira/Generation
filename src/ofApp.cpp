@@ -17,7 +17,7 @@ void testApp::setup(){
     lineColor = ofColor::seaGreen;
     
     //Set Noise
-    (noise << 0.5 << 0.0 << 0.125).lockStream(); //Remind myself to always write code this way
+    (noise << 0.5 << 0.25 << 0.125).lockStream(); //Remind myself to always write code this way
     noise.setNormalized(true);
 }
 
@@ -108,6 +108,7 @@ void testApp::keyPressed(int key){
             
         case 'p':
             //FIXME: This will not be accurate]
+            if (!prefs.empty()) prefs.pop_back(); //FIXME: DEBUG CODE
             prefs.push_back(pair<int, float>(time - params.msSampleSize, 0.5));
             break;
         case 'f':

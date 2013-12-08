@@ -11,7 +11,7 @@
 class Utils{
     
 public:
-    /* Cubic B-Spline
+    /* Quadratic B-Spline
      * https://en.wikipedia.org/wiki/B-spline
          :<math>B_1=x^2/2 \qquad 0 \le x \le 1</math>
          :<math>B_2=(-2x^2+6x-3)/2 \qquad 1 \le x \le 2</math>

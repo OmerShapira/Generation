@@ -21,6 +21,7 @@
 		17721EAB184BF7A0007C475E /* ofxEasingQuint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17721E9B184BF7A0007C475E /* ofxEasingQuint.cpp */; };
 		17721EAC184BF7A0007C475E /* ofxEasingSine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17721E9D184BF7A0007C475E /* ofxEasingSine.cpp */; };
 		17721EAD184BF7A0007C475E /* ofxTween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17721E9F184BF7A0007C475E /* ofxTween.cpp */; };
+		17E48B3A185513CC00D7AA1B /* ofxMSAInteractiveObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17E48B38185513CC00D7AA1B /* ofxMSAInteractiveObject.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -107,6 +108,9 @@
 		17721E9E184BF7A0007C475E /* ofxEasingSine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxEasingSine.h; sourceTree = "<group>"; };
 		17721E9F184BF7A0007C475E /* ofxTween.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTween.cpp; sourceTree = "<group>"; };
 		17721EA0184BF7A0007C475E /* ofxTween.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxTween.h; sourceTree = "<group>"; };
+		17E48B2E184D528700D7AA1B /* GenerationDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerationDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E48B38185513CC00D7AA1B /* ofxMSAInteractiveObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMSAInteractiveObject.cpp; sourceTree = "<group>"; };
+		17E48B39185513CC00D7AA1B /* ofxMSAInteractiveObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMSAInteractiveObject.h; sourceTree = "<group>"; };
 		1D62E92EF3FAA346CCAE6E56 /* ofxUIRadio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUIRadio.h; path = ../../addons/ofxUI/src/ofxUIRadio.h; sourceTree = SOURCE_ROOT; };
 		1E1B1EDCC8EBFD6C27F5F577 /* ofxUI2DPad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUI2DPad.h; path = ../../addons/ofxUI/src/ofxUI2DPad.h; sourceTree = SOURCE_ROOT; };
 		1EC8F090F53493B67CD75AC4 /* ofxUILabelToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUILabelToggle.h; path = ../../addons/ofxUI/src/ofxUILabelToggle.h; sourceTree = SOURCE_ROOT; };
@@ -162,7 +166,6 @@
 		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
-		E4B69B5B0A3A1756003C02F2 /* Generation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Generation.app; path = /Users/Omer/dev/openFrameworks/0.8.0/apps/Generation/bin/Generation.app; sourceTree = "<absolute>"; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
@@ -277,6 +280,24 @@
 			path = Easings;
 			sourceTree = "<group>";
 		};
+		17E48B36185513CC00D7AA1B /* ofxMSAInteractiveObject */ = {
+			isa = PBXGroup;
+			children = (
+				17E48B37185513CC00D7AA1B /* src */,
+			);
+			name = ofxMSAInteractiveObject;
+			sourceTree = "<group>";
+		};
+		17E48B37185513CC00D7AA1B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				17E48B38185513CC00D7AA1B /* ofxMSAInteractiveObject.cpp */,
+				17E48B39185513CC00D7AA1B /* ofxMSAInteractiveObject.h */,
+			);
+			name = src;
+			path = ../../addons/ofxMSAInteractiveObject/src;
+			sourceTree = "<group>";
+		};
 		86DF17850277042C979393F5 /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +325,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				17E48B36185513CC00D7AA1B /* ofxMSAInteractiveObject */,
 				17721E83184BF7A0007C475E /* ofxTween */,
 				17721E3A184B0219007C475E /* ofxMSATimer */,
 				9FD9332064A1194AC3CD20C2 /* ofxRange */,
@@ -422,6 +444,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
+				17E48B2E184D528700D7AA1B /* GenerationDebug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -466,7 +489,7 @@
 			);
 			name = Generation;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* Generation.app */;
+			productReference = 17E48B2E184D528700D7AA1B /* GenerationDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -539,6 +562,7 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				17721EA1184BF7A0007C475E /* ofxEasing.cpp in Sources */,
 				17721EA8184BF7A0007C475E /* ofxEasingLinear.cpp in Sources */,
+				17E48B3A185513CC00D7AA1B /* ofxMSAInteractiveObject.cpp in Sources */,
 				17721EA4184BF7A0007C475E /* ofxEasingCirc.cpp in Sources */,
 				17721EA6184BF7A0007C475E /* ofxEasingElastic.cpp in Sources */,
 				17721E3E184B0219007C475E /* ofxMSATimer.cpp in Sources */,
