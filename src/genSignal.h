@@ -9,9 +9,6 @@
 #pragma once
 #include "ofMain.h"
 #include "Param.h"
-//#include <iostream>
-//#include <vector>
-
 using namespace std;
 
 class Signal{
@@ -74,6 +71,7 @@ class CompoundSignal : public Signal {
     typedef pair<Param<T>, int> value_type;
     map<Param<T>, int> params;
     bool locked;
+    float normalizationCoef;
     
 public:
     virtual ~CompoundSignal(){}
@@ -97,6 +95,8 @@ public:
             for (auto& kv : params){
                 sum += kv.second;
             }
+            normalizationCoef = 1/sum;
         }
+        locked = true;
     }
 };
