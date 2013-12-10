@@ -60,9 +60,6 @@ private:
             return normalizationCoef;
         } else {
             normalizationCoef = 0;
-//            for (vector<float>::iterator f = coefs.begin(); f != coefs.end(); ++f) {
-//                normalizationCoef += *f;
-//            }
             for (float f : coefs){
                 normalizationCoef += f;
             }
