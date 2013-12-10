@@ -14,38 +14,41 @@
 #include "genParam.h"
 #include "genSignal.h"
 
+using namespace gen;
+
+
 class Thumbnail : public ofxMSAInteractiveObject{
     ofVec2f dimensions;
     ofVboMesh vbo;
     
-    
-    CompoundSignal parentSignal;
-    Param<Signal> param;
+    CompoundSignal parentSignal; //FIXME: This needs to not have generics
+    Param param;
     
 public:
     
-    Thumbnail(Param<Signal> p): param(p){
+    Thumbnail(Param p): param(p){
         for (int i = 0; i < width ; i++){ //TODO: make this adaptive resolution
-            vbo.setMode(OF_PRIMITIVE_LINES);
-            vbo.addVertex(ofPoint());
+            vbo.setMode(OF_PRIMITIVE_LINE_STRIP);
+            float x = ofMap(i, 0, width, param.position, param.position + param.msLength);
+            const Signal& func = param.func;
+            vbo.addVertex(ofPoint(i, height * (1.0 - func(x))));
         }
     }
     
     void setup() {
-		enableMouseEvents();
+        enableMouseEvents();
+    }
+    
+    void exit() {
         
-	}
-	
-	void exit() {
-        
-	}
-	
-	void update() {
-		
-	}
+    }
+    
+    void update() {
+
+    }
     
     void draw() {
-        
+        vbo.draw();
     }
     
     
@@ -68,19 +71,19 @@ public:
     }
     
     virtual void onRelease(int x, int y, int button) {
-
+        
     }
     
     virtual void onReleaseOutside(int x, int y, int button) {
-
+        
     }
     
     virtual void keyPressed(int key) {
-
+        
     }
     
     virtual void keyReleased(int key) {
-
+        
     }
     
 private:

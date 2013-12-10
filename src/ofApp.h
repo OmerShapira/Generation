@@ -5,6 +5,9 @@
 #include "genUtils.h"
 #include "genSignal.h"
 #include "genParam.h"
+#include "genThumbnail.h"
+
+using namespace gen;
 
 class testApp : public ofBaseApp{
     

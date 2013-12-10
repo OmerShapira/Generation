@@ -44,7 +44,7 @@ void testApp::update(){
     
     if (prefs.size() > 0) {
         preview.clear();
-        Param<Signal> data(prefs[0]); //FIXME: Remove this
+        Param data(prefs[0]); //FIXME: Remove this
         int segments = ceil(params.waveformNumSegments * params.msSampleSize / params.msScreenSampleLength);
         for (int i = 0 ; i < segments ; i++){
             float x = ofMap(i, 0, segments, 0, params.pxVocabThumbnailSize); //FIXME: MAGICK NUMBER
@@ -109,7 +109,7 @@ void testApp::keyPressed(int key){
         case 'p':
             //FIXME: This will not be accurate]
             if (!prefs.empty()) prefs.pop_back(); //FIXME: DEBUG CODE
-            prefs.push_back(Param<Signal>(noise, time - params.msSampleSize, 500, "Temp Name"));
+            prefs.push_back(Param(noise, time - params.msSampleSize, 500, "Temp Name"));
             break;
         case 'f':
             ofToggleFullscreen();
