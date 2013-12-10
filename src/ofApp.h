@@ -3,16 +3,8 @@
 #include "ofMain.h"
 #include "ofxMSATimer.h"
 #include "Utils.h"
-
-
-class prefVector : public vector<pair<int, float> >{     //TODO: remove support for deletes
-private: int lastAddedIndex;
-public:
-    void updateAdded(){ lastAddedIndex = this->size() - 1; }
-    bool hasChanged(){ return (lastAddedIndex > 0) && (lastAddedIndex != this->size() - 1);}
-    vector<pair<int, float> >::iterator fromLastUpdated(){ return (this->begin() + lastAddedIndex);}
-};
-
+#include "genSignal.h"
+#include "Param.h"
 
 class testApp : public ofBaseApp{
     
@@ -34,7 +26,7 @@ public:
 private:
     ofVboMesh waveform, preview;
     ofxMSATimer timer;
-    prefVector prefs;
+    PrefVector<Signal> prefs;
     NoiseWrapper noise;
     ofColor waveformColor, lineColor;
 

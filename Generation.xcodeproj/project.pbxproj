@@ -111,6 +111,8 @@
 		17E48B2E184D528700D7AA1B /* GenerationDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerationDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E48B38185513CC00D7AA1B /* ofxMSAInteractiveObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMSAInteractiveObject.cpp; sourceTree = "<group>"; };
 		17E48B39185513CC00D7AA1B /* ofxMSAInteractiveObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMSAInteractiveObject.h; sourceTree = "<group>"; };
+		17E48B3B1855172E00D7AA1B /* Thumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
+		17E48B3C1855778700D7AA1B /* genSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = genSignal.h; sourceTree = "<group>"; };
 		1D62E92EF3FAA346CCAE6E56 /* ofxUIRadio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUIRadio.h; path = ../../addons/ofxUI/src/ofxUIRadio.h; sourceTree = SOURCE_ROOT; };
 		1E1B1EDCC8EBFD6C27F5F577 /* ofxUI2DPad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUI2DPad.h; path = ../../addons/ofxUI/src/ofxUI2DPad.h; sourceTree = SOURCE_ROOT; };
 		1EC8F090F53493B67CD75AC4 /* ofxUILabelToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUILabelToggle.h; path = ../../addons/ofxUI/src/ofxUILabelToggle.h; sourceTree = SOURCE_ROOT; };
@@ -454,6 +456,8 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				17721E82184BE47D007C475E /* Utils.h */,
+				17E48B3C1855778700D7AA1B /* genSignal.h */,
+				17E48B3B1855172E00D7AA1B /* Thumbnail.h */,
 				17721E40184B98F5007C475E /* Param.h */,
 				17721E42184BA9DA007C475E /* Markov.h */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
