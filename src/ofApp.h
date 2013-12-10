@@ -2,9 +2,9 @@
 
 #include "ofMain.h"
 #include "ofxMSATimer.h"
-#include "Utils.h"
+#include "genUtils.h"
 #include "genSignal.h"
-#include "Param.h"
+#include "genParam.h"
 
 class testApp : public ofBaseApp{
     

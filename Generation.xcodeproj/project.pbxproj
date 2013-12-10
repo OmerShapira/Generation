@@ -78,9 +78,9 @@
 		153F60E33CCCB6E2FF9CE543 /* ofxUIOFWrapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUIOFWrapper.h; path = ../../addons/ofxUI/src/ofxUIOFWrapper.h; sourceTree = SOURCE_ROOT; };
 		17721E3C184B0219007C475E /* ofxMSATimer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMSATimer.cpp; sourceTree = "<group>"; };
 		17721E3D184B0219007C475E /* ofxMSATimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMSATimer.h; sourceTree = "<group>"; };
-		17721E40184B98F5007C475E /* Param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Param.h; sourceTree = "<group>"; };
-		17721E42184BA9DA007C475E /* Markov.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Markov.h; sourceTree = "<group>"; };
-		17721E82184BE47D007C475E /* Utils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = Utils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		17721E40184B98F5007C475E /* genParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genParam.h; sourceTree = "<group>"; };
+		17721E42184BA9DA007C475E /* genMarkov.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = genMarkov.h; sourceTree = "<group>"; };
+		17721E82184BE47D007C475E /* genUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = genUtils.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		17721E86184BF7A0007C475E /* easing_terms_of_use.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = easing_terms_of_use.html; sourceTree = "<group>"; };
 		17721E87184BF7A0007C475E /* ofxEasing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasing.cpp; sourceTree = "<group>"; };
 		17721E88184BF7A0007C475E /* ofxEasing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxEasing.h; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		17E48B2E184D528700D7AA1B /* GenerationDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerationDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E48B38185513CC00D7AA1B /* ofxMSAInteractiveObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMSAInteractiveObject.cpp; sourceTree = "<group>"; };
 		17E48B39185513CC00D7AA1B /* ofxMSAInteractiveObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxMSAInteractiveObject.h; sourceTree = "<group>"; };
-		17E48B3B1855172E00D7AA1B /* Thumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Thumbnail.h; sourceTree = "<group>"; };
+		17E48B3B1855172E00D7AA1B /* genThumbnail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = genThumbnail.h; sourceTree = "<group>"; };
 		17E48B3C1855778700D7AA1B /* genSignal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = genSignal.h; sourceTree = "<group>"; };
 		1D62E92EF3FAA346CCAE6E56 /* ofxUIRadio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUIRadio.h; path = ../../addons/ofxUI/src/ofxUIRadio.h; sourceTree = SOURCE_ROOT; };
 		1E1B1EDCC8EBFD6C27F5F577 /* ofxUI2DPad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxUI2DPad.h; path = ../../addons/ofxUI/src/ofxUI2DPad.h; sourceTree = SOURCE_ROOT; };
@@ -455,11 +455,11 @@
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
-				17721E82184BE47D007C475E /* Utils.h */,
+				17721E82184BE47D007C475E /* genUtils.h */,
 				17E48B3C1855778700D7AA1B /* genSignal.h */,
-				17E48B3B1855172E00D7AA1B /* Thumbnail.h */,
-				17721E40184B98F5007C475E /* Param.h */,
-				17721E42184BA9DA007C475E /* Markov.h */,
+				17E48B3B1855172E00D7AA1B /* genThumbnail.h */,
+				17721E40184B98F5007C475E /* genParam.h */,
+				17721E42184BA9DA007C475E /* genMarkov.h */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 			);
 			path = src;

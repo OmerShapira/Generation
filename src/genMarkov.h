@@ -1,5 +1,5 @@
 //
-//  Markov.h
+//  genMarkov.h
 //  Generation
 //
 //  Created by Omer Shapira on 01/12/13.
@@ -8,7 +8,7 @@
 
 #pragma once
 #include <iostream.h>
-#include "Param.h"
+#include "genParam.h"
 
 template <class T>
 class MarkovChain {

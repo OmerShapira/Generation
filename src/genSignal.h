@@ -8,7 +8,7 @@
 
 #pragma once
 #include "ofMain.h"
-#include "Param.h"
+#include "genParam.h"
 using namespace std;
 
 class Signal{

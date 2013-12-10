@@ -10,19 +10,25 @@
 
 #include "ofxMSAInteractiveObject.h"
 #include "ofMain.h"
-#include "Utils.h"
+#include "genUtils.h"
+#include "genParam.h"
+#include "genSignal.h"
 
 class Thumbnail : public ofxMSAInteractiveObject{
     ofVec2f dimensions;
     ofVboMesh vbo;
-    enum {} animation_state;
-    int elapsed;
+    
+    
+    CompoundSignal parentSignal;
+    Param<Signal> param;
     
 public:
     
-    Thumbnail(){}
-    Thumbnail(){
-        
+    Thumbnail(Param<Signal> p): param(p){
+        for (int i = 0; i < width ; i++){ //TODO: make this adaptive resolution
+            vbo.setMode(OF_PRIMITIVE_LINES);
+            vbo.addVertex(ofPoint());
+        }
     }
     
     void setup() {
@@ -76,5 +82,7 @@ public:
     virtual void keyReleased(int key) {
 
     }
-
+    
+private:
+    Thumbnail(){};
 };

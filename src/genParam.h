@@ -1,5 +1,5 @@
 //
-//  Param.h
+//  genParam.h
 //  Generation
 //
 //  Created by Omer Shapira on 01/12/13.
@@ -8,7 +8,6 @@
 
 #pragma once
 #include <iostream>
-//#include "Signal.h"
 
 using namespace std;
 

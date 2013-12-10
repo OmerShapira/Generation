@@ -1,5 +1,5 @@
 //
-//  Utils.h
+//  genUtils.h
 //  Generation
 //
 //  Created by Omer Shapira on 01/12/13.
